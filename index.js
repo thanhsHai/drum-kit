@@ -26,34 +26,45 @@ function makeSound(key) {
   switch (key) {
     case "w":
       crashSound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     case "a":
       kickBassSound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     case "s":
       snareSound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     case "d":
       tom01Sound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     case "j":
       tom02Sound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     case "k":
       tom03Sound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     case "l":
       tom04Sound.play();
+      $("h1").text("Drum 🥁 Kit");
       break;
 
     default:
-      alert("Invalid.");
+      $("h1").slideUp(500).slideDown(500);
+
+      setTimeout(() => {
+        $("h1").text("Keypress invalid !");
+      }, 500);
       break;
   }
 }
